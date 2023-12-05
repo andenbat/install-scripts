@@ -43,6 +43,9 @@ pip3 install huggingface_hub runpod
 echo "Downloading juggernautXL v6 model"
 cd /workspace/stable-diffusion-webui/models/Stable-diffusion
 wget -O juggernautXL_v6.safetensors https://civitai.com/api/download/models/198530?type=Model&format=SafeTensor&size=full&fp=fp16
+echo "download sdxl-turbo-vision"
+wget -O sdxl-turbo-vision https://civitai.com/api/download/models/249989
+
 
 echo "Downloading SDXL base model"
 wget https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors
@@ -60,6 +63,11 @@ wget https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p
 
 echo "Downloading SDXL ControlNet models"
 wget https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/diffusers_xl_canny_full.safetensors
+wget https://huggingface.co/lllyasviel/sd_control_collection/blob/main/t2i-adapter_xl_sketch.safetensors
+wget https://huggingface.co/lllyasviel/sd_control_collection/blob/main/sai_xl_sketch_256lora.safetensors
+wget https://huggingface.co/lllyasviel/sd_control_collection/blob/main/sai_xl_canny_256lora.safetensors
+
+
 
 echo "Downloading Upscalers"
 mkdir -p /workspace/stable-diffusion-webui/models/ESRGAN
