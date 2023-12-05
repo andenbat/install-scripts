@@ -16,4 +16,4 @@ chmod +x install2.sh
 
 
 
--> note to future self: rn my process is to ssh or open jupyter notebook in/on the pod/contanier and run these commands, i SHOULD REALLY use runpod CLI and change this repo to include the setup, start and stop, so i can create the network volume and document the process in cooodeeee....
+-> note to future self: rn my process is to ssh or open jupyter notebook in/on the pod/contanier and run these commands, i SHOULD REALLY use runpod CLI and change this repo to include the setup, start and stop, so i can create the network volume and document the process in cooodeeee.... ALso maybe just build the actual template file properly XD
